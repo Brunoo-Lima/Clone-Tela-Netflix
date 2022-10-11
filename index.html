@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NETFLIX</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href=""><img src="logo.png" alt="logo-netflix"></a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="login">
+      <div class="card">
+        <h1>Entrar</h1>
+        <div class="texto">
+          <input type="email" name="tEmail" id="email" placeholder="Email ou número de telefone">
+        </div>
+
+        <div class="texto">
+          <input type="password" name="tSenha" id="senha" maxlength="10" placeholder="Senha">
+        </div>
+
+          <input class="btn-enter" type="button" value="Entrar" onclick="carregar()">
+        
+        <div class="suporte">
+          <span><input type="checkbox" checked> Lembre-se de mim</span>
+          <span><a href="">Precisa de ajuda?</a></span>
+        </div>
+
+        <div id="res">
+          <span>Novo por aqui? </span><a href ="https://www.netflix.com/br/">Assine Agora</a>
+
+          <p>
+            Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô <a class="saiba-mais" href="">Saiba mais</a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="javascript.js"></script>
+</body>
+</html>

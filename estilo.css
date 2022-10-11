@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor0: #ff0000;
+  --cor1: #ffffff;
+  --cor2: #333333;
+  --cor3: #010305;
+  --cor4: #8c8c8c;
+
+  --fonte: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.158)),
+    linear-gradient(to top, rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.007)),
+    url("wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: var(--fonte);
+}
+
+nav {
+  padding: 0 40px;
+}
+
+nav img {
+  width: 167px;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.login {
+  width: 450px;
+  height: 578px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 40px 68px 40px 68px;
+  background-color: rgba(0, 0, 0, 0.555);
+}
+
+.card h1 {
+  margin: 15px 0;
+  color: var(--cor1);
+}
+
+.texto {
+  width: 100%;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.texto input {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  padding-left: 20px;
+  border: none;
+  outline: none;
+  margin: 8px 0;
+  background-color: var(--cor2);
+  font-size: 1rem;
+  color: var(--cor1);
+}
+
+.texto input:hover {
+  background: #333333bd;
+}
+
+.texto input::placeholder {
+  color: var(--cor4);
+  font-size: 1rem;
+}
+
+.btn-enter {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-top: 40px;
+  background-color: var(--cor0);
+  color: var(--cor1);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn-enter:hover {
+  cursor: pointer;
+}
+
+.suporte {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: .8em;
+  color: var(--cor1);
+  align-items: center;
+}
+
+.suporte span {
+  padding-right: 5px;
+}
+
+.suporte a {
+  text-decoration: none;
+  color: var(--cor1);
+}
+
+.suporte a:hover {
+  text-decoration: underline;
+}
+
+
+div#res {
+  color: var(--cor1);
+  padding: 60px 0;
+  width: 100%;
+}
+
+div#res a {
+  text-decoration: none;
+  color: var(--cor1);
+}
+
+div#res a:hover {
+  text-decoration: underline;
+}
+
+div#res a.saiba-mais {
+  color: rgb(75, 75, 247);
+}
+
+div#res span {
+  color: var(--cor4);
+}
+
+div#res p {
+  padding: 15px 0;
+  font-size: 13px;
+  color: var(--cor4);
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    margin: auto;
+    width: 90%;
+  }
+}
